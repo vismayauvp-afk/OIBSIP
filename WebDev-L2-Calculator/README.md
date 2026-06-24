@@ -1,6 +1,6 @@
-# 🧮 Calculator Pro
+# 🧮 Modern Calculator
 
-A modern and feature-rich calculator built using **HTML5, CSS3, and Vanilla JavaScript**. This project goes beyond a basic calculator by providing a premium glassmorphism UI, scientific functions, history tracking, keyboard support, theme switching, and memory operations.
+A modern and feature-rich calculator built using **HTML5, CSS3, and Vanilla JavaScript**. This project provides a premium glassmorphism UI, scientific functions, history tracking, keyboard support, theme switching, and memory operations.
 
 ## ✨ Features
 
@@ -62,39 +62,21 @@ A modern and feature-rich calculator built using **HTML5, CSS3, and Vanilla Java
 
 * HTML5
 * CSS3
-* JavaScript (Vanilla)
+* JavaScript
 * Local Storage API
 
 ## 📂 Project Structure
 
 ```
-Calculator-Pro/
+WebDev-L2-Calculator/
 │
 ├── index.html
 ├── style.css
 ├── script.js
-├── README.md
+└── README.md
 ```
-
-## 🚀 Getting Started
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/yourusername/calculator-pro.git
-```
-
-2. Open the project folder:
-
-```bash
-cd calculator-pro
-```
-
-3. Run the project by opening `index.html` in your browser.
 
 ## 📸 Preview
-
-A modern calculator with:
 
 * Glassmorphism UI
 * Dark/Light mode
@@ -109,9 +91,9 @@ A modern calculator with:
 * Sound effects
 * Multiple color themes
 * Hide/Show history panel
-* Calculation export
+* Export calculations
 * PWA support
 
 ## 👨‍💻 Author
 
-Developed using HTML, CSS, and JavaScript as part of a Web Development project.
+Developed using HTML, CSS, and JavaScript as part of the **Oasis Infobyte Web Development and Designing Internship (Level 2)**.
