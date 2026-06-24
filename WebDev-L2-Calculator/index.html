@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calculator">
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div id="clock">00:00:00</div>
+        <button id="theme-btn">🌙</button>
+    </div>
+
+    <!-- Display -->
+    <div class="display">
+        <div id="expression"></div>
+        <div id="result">0</div>
+    </div>
+
+    <!-- Memory Buttons -->
+    <div class="memory">
+        <button>MC</button>
+        <button>MR</button>
+        <button>M+</button>
+        <button>M-</button>
+    </div>
+
+    <!-- Main Buttons -->
+    <div class="buttons">
+
+        <button class="special">C</button>
+        <button class="special">DEL</button>
+        <button>%</button>
+        <button class="operator">÷</button>
+
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="operator">×</button>
+
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="operator">−</button>
+
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="operator">+</button>
+
+        <button>±</button>
+        <button>0</button>
+        <button>.</button>
+        <button class="equal">=</button>
+
+    </div>
+
+    <!-- Extra Features -->
+    <div class="extra-buttons">
+        <button>√</button>
+        <button>x²</button>
+        <button>π</button>
+        <button id="copyBtn">📋</button>
+    </div>
+
+</div>
+
+<!-- History -->
+<div class="history">
+
+    <div class="history-header">
+        <h3>History</h3>
+        <button id="clear-history">Clear</button>
+    </div>
+
+    <ul id="history-list">
+
+    </ul>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
