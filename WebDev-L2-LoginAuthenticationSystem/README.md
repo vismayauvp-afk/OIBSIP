@@ -137,23 +137,6 @@ This project helped me understand:
 
 ---
 
-## 📸 Preview
-
-Add screenshots of your project here.
-
-### Login Page
-
-<img src="screenshots/login.png" alt="Login Page" width="100%">
-
-### Registration Page
-
-<img src="screenshots/register.png" alt="Registration Page" width="100%">
-
-### Dashboard
-
-<img src="screenshots/dashboard.png" alt="Dashboard" width="100%">
-
-> Replace the image paths with your own screenshots.
 
 ---
 
