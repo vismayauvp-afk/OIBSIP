@@ -2,8 +2,7 @@
 
 A clean, responsive, human-crafted editorial tribute page dedicated to Ada Lovelace, the world's first computer programmer. Built with a focus on balanced typography, minimal layouts, and vanilla front-end architecture.
 
-## 🚀 Live Demo
-*Link your deployed GitHub Pages URL here*
+
 
 ## 🎨 Design Philosophy
 Unlike typical high-contrast layouts, this project functions like a digital museum entry. It rejects over-engineered utility frames and flashy AI indicators, opting for an authentic human developer architecture:
