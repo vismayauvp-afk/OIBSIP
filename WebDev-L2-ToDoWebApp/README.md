@@ -149,6 +149,6 @@ Add screenshots of your application below.
 
 # 👨‍💻 Author
 
-**Keerthi**
+**Vismaya UVP**
 
 Developed for the **Oasis Infobyte Web Development & Design Internship – Level 2 Task 3**.
