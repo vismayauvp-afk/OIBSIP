@@ -1,133 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalpana Chawla Tribute</title>
-
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marie Curie — Two Elements, Two Nobel Prizes, One Relentless Mind</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="stars"></div>
+<nav class="topnav">
+  <span class="topnav__name">M. SKŁODOWSKA–CURIE</span>
+  <ul class="topnav__links">
+    <li><a href="#biography">Biography</a></li>
+    <li><a href="#timeline">Milestones</a></li>
+    <li><a href="#legacy">Legacy</a></li>
+  </ul>
+</nav>
 
+<!-- ============ HERO ============ -->
 <header class="hero">
-
-    <div class="hero-text">
-        <h1>Kalpana Chawla</h1>
-        <h3>First Indian Woman in Space</h3>
-
-        <p>
-            “You must enjoy the journey because whether or not you get there, you must have fun on the way.”
-        </p>
-
-        <a href="#about" class="btn">Explore Journey 🚀</a>
+  <div class="hero__text">
+    <div class="hero__chips">
+      <span class="chip">Po · 84</span>
+      <span class="chip">Ra · 88</span>
     </div>
-
-    <div class="hero-img">
-        <img src="kalpana.png" alt="Kalpana Chawla">
+    <span class="eyebrow">Physicist &amp; Chemist · 1867–1934</span>
+    <h1>Marie<br><em>Curie</em></h1>
+    <p class="hero__tagline">Two elements discovered. Two Nobel Prizes won. One relentless curiosity that lit up modern science.</p>
+    <p class="hero__dates">WARSAW, 1867 — PASSY, 1934</p>
+  </div>
+  <div class="hero__portrait">
+    <div class="portrait-frame">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Marie_Curie_c._1920s.jpg?width=900"
+           alt="Black-and-white portrait photograph of Marie Curie, seated, taken around the 1920s">
     </div>
-
+    <p class="portrait-caption">Marie Curie, c. 1920s — Wikimedia Commons, public domain</p>
+  </div>
 </header>
 
-<section id="about">
-    <h2>About Her</h2>
-    <div class="card">
-        <p>
-            Kalpana Chawla was an Indian-American astronaut and aerospace engineer who inspired millions by breaking barriers in space science.
-        </p>
-    </div>
+<!-- ============ STATS STRIP ============ -->
+<section class="stats-strip" aria-label="Quick facts about Marie Curie">
+  <div class="stat">
+    <span class="stat__num">2</span>
+    <span class="stat__label">Nobel Prizes, two different sciences</span>
+  </div>
+  <div class="stat">
+    <span class="stat__num">2</span>
+    <span class="stat__label">New elements discovered</span>
+  </div>
+  <div class="stat">
+    <span class="stat__num">1M+</span>
+    <span class="stat__label">Soldiers treated by her X-ray units</span>
+  </div>
+  <div class="stat">
+    <span class="stat__num">5</span>
+    <span class="stat__label">Nobel Prizes won by her family</span>
+  </div>
 </section>
 
-<section>
-    <h2>Early Life</h2>
-
-    <div class="card">
-        <ul>
-            <li><b>Born:</b> 17 March 1962, Karnal, Haryana (India)</li>
-            <li>Grew up in a simple middle-class family</li>
-            <li>Developed interest in flying and aircraft models at a young age</li>
-            <li>Often visited local flying clubs and airports to learn about airplanes</li>
-            <li>Excelled in science and mathematics during school</li>
-            <li>Was one of the few girls pursuing technical education in her region</li>
-            <li>Dreamed of becoming an aeronautical engineer from childhood</li>
-        </ul>
+<!-- ============ BIOGRAPHY ============ -->
+<section class="section section--paper" id="biography">
+  <div class="section__inner">
+    <div class="section__head">
+      <span class="eyebrow">Biography</span>
+      <h2>A Life Spent Looking Closer</h2>
     </div>
+    <div class="bio__grid">
+      <aside class="bio__sidenote">
+        <p>Her laboratory notebooks are still radioactive today and are kept in lead-lined boxes at the Bibliothèque nationale de France.</p>
+        <p>She and Pierre refused to patent the radium-isolation process, so any laboratory in the world could use it freely.</p>
+        <p>Albert Einstein reportedly said she was probably the only person whom fame could never corrupt.</p>
+      </aside>
+      <div class="bio__text">
+        <p>Maria Skłodowska was born in Warsaw in 1867, the youngest of five children of two schoolteachers. Russian authorities controlled Congress Poland at the time and had stripped laboratory work from the curriculum, so her father smuggled instruments home to teach his children science in secret. By the time Maria was eleven she had lost both her mother and her eldest sister, and she had also discovered that she was, by a wide margin, the sharpest student in any room she entered. Barred from university simply for being a woman, she studied physics through an underground network of classes Poles called the "Flying University," and tutored for years to save enough money to follow her sister to Paris.</p>
+        <p>Before any of that, though, came two quieter heartbreaks. Her sister Zofia had died of typhus caught from a lodger the family took in for income, and a few years later, while working as a governess to fund her future studies, Maria fell in love with the family's son, a young mathematician named Kazimierz Żorawski. His parents refused to let him marry a penniless relative, and he was unable to stand up to them. Decades later, as an old man and a professor himself, he was known to sit quietly in front of a statue of Maria that had been raised outside the Warsaw institute she founded — a small, sad postscript to a romance that never got to happen.</p>
+        <p>She arrived at the Sorbonne in 1891, half-frozen in a garret apartment and living on bread and tea, and finished at the top of her class anyway. A mutual interest in laboratory space introduced her to Pierre Curie, a physicist who, in her own telling, was the first person who seemed to take her work as seriously as she did. They married in 1895 in plain clothes with no religious ceremony, and the dark dress Marie wore that day doubled as her lab coat for years afterward. When Henri Becquerel announced that uranium gave off mysterious rays on its own, with no outside light source, Marie chose it as the subject of her doctoral thesis — a decision that would consume the rest of her life.</p>
+        <p>Working out of a leaking, unheated shed because no one would give them a proper laboratory, Marie and Pierre processed tonnes of a mineral called pitchblende, ounce by ounce, to chase a signal her instruments told her had to be there. In 1898 they announced two new elements: polonium, named for her occupied homeland, and radium, from the Latin for "ray." Along the way she coined the word "radioactivity" itself. Neither of them yet understood that the substances glowing softly on their shelves at night were poisoning them. In 1903 the Curies shared the Nobel Prize in Physics with Becquerel, making Marie the first woman ever to receive one — though, as a woman, she was not permitted to speak at the Royal Institution lecture announcing their own work; Pierre delivered it alone.</p>
+        <p>Pierre was killed by a horse-drawn cart in 1906, and Marie, devastated, took over his chair at the Sorbonne — becoming its first female professor. Five years later her achievements were nearly overshadowed by scandal: it became public that she'd had a relationship with a married former student of Pierre's, and the right-wing French press, already inclined to paint her as a foreign outsider, tried to brand her a homewrecker just weeks before the Nobel committee was set to honor her again. Curie refused to be shamed out of attending. "The prize has been given to me for the discovery of polonium and radium," she wrote back to the committee chair, "there is no relation between my scientific work and my private life." She collected her second Nobel Prize, in Chemistry, in 1911 — for isolating pure radium — making her the only person in history honored in two different sciences.</p>
+        <p>During the First World War she taught herself auto mechanics and radiology so she could drive mobile X-ray units, nicknamed "Little Curies," to the front lines herself, with her teenage daughter Irène often working beside her. Her units are estimated to have helped treat over a million wounded soldiers. She went on to found the Radium Institute in Paris in 1920 and a sister institute in Warsaw in 1932, mentoring a generation of scientists — many of them women — before dying in 1934 of aplastic anaemia, almost certainly a consequence of the very radiation exposure she had spent her life studying. Her legacy didn't end there: in 1935, her daughter Irène Joliot-Curie won her own Nobel Prize in Chemistry, making the Curies the most decorated family in the history of the award.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section>
-    <h2>Education</h2>
-
-    <div class="card">
-        <ul>
-            <li><b>Schooling:</b> Tagore School, Karnal</li>
-            <li><b>Bachelor’s:</b> Aeronautical Engineering – Punjab Engineering College</li>
-            <li><b>Master’s:</b> Aerospace Engineering – University of Texas, Arlington</li>
-            <li><b>Ph.D:</b> Aerospace Engineering – University of Colorado Boulder</li>
-            <li>Specialized in fluid dynamics and aircraft propulsion systems</li>
-            <li>Published research in aerodynamics and space engineering</li>
-        </ul>
-    </div>
+<!-- ============ QUOTE ============ -->
+<section class="section section--quote">
+  <div class="quote__mark">&ldquo;</div>
+  <blockquote>
+    Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less.
+  </blockquote>
+  <span class="quote__cite">— attributed to Marie Curie</span>
 </section>
 
-<section>
-    <h2>Journey to NASA</h2>
-
-    <div class="card">
-        <ul>
-            <li><b>1988:</b> Began research career in aerospace engineering in the USA</li>
-            <li>Worked at NASA research centers before becoming astronaut candidate</li>
-            <li><b>1994:</b> Selected by NASA as an astronaut trainee</li>
-            <li>Completed intense astronaut training including survival & technical simulation</li>
-            <li>Trained in robotics, spacecraft systems, and mission operations</li>
-            <li><b>1997:</b> First space flight aboard Space Shuttle Columbia (STS-87)</li>
-            <li>Became the first Indian-born woman in space</li>
-        </ul>
+<!-- ============ TIMELINE ============ -->
+<section class="section section--dark" id="timeline">
+  <div class="section__inner">
+    <div class="section__head">
+      <span class="eyebrow">Milestones</span>
+      <h2>Key Discoveries &amp; Turning Points</h2>
     </div>
+    <div class="timeline">
+      <div class="tl-item">
+        <span class="tl-year">1891</span>
+        <h3>Arrives in Paris</h3>
+        <p>Enrolls at the Sorbonne to study physics and mathematics, after years of saving money as a governess in Poland.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-year">1895</span>
+        <h3>Marries Pierre Curie</h3>
+        <p>The two begin a scientific partnership that will define both of their careers and change the course of physics.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-year">1898</span>
+        <h3>Discovers polonium and radium</h3>
+        <p>After processing tonnes of pitchblende ore by hand, the Curies announce two new elements and coin the term "radioactivity."</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-year">1903</span>
+        <h3>First Nobel Prize</h3>
+        <p>Shares the Nobel Prize in Physics with Pierre and Henri Becquerel, becoming the first woman to win a Nobel Prize.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-year">1906</span>
+        <h3>First woman professor at the Sorbonne</h3>
+        <p>After Pierre's sudden death in a street accident, Marie takes over his professorship at the University of Paris.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-year">1911</span>
+        <h3>Weathers a press scandal</h3>
+        <p>Her relationship with physicist Paul Langevin becomes public; the French press attacks her as a foreign outsider days before her second Nobel.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-year">1911</span>
+        <h3>Second Nobel Prize</h3>
+        <p>Wins the Nobel Prize in Chemistry for isolating pure radium — still the only person honored in two different sciences.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-year">1914–1918</span>
+        <h3>Mobile X-ray units at the front</h3>
+        <p>Develops and personally drives "Little Curies" — mobile radiography vehicles — to treat wounded soldiers near the front lines.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-year">1920</span>
+        <h3>Founds the Radium Institute, Paris</h3>
+        <p>Establishes a dedicated radioactivity research institute, later renamed the Institut Curie, training a new generation of scientists.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-year">1921</span>
+        <h3>Tours the United States</h3>
+        <p>Raises funds for research and is given one gram of radium by President Warren Harding on behalf of American women.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-year">1932</span>
+        <h3>Founds the Radium Institute, Warsaw</h3>
+        <p>Opens a sister institute in her native city, with her own sister Bronisława installed as its first director.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-year">1934</span>
+        <h3>Death from radiation exposure</h3>
+        <p>Dies of aplastic anaemia at a sanatorium in the French Alps, almost certainly a consequence of decades of unprotected research.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section>
-    <h2>Space Missions</h2>
-
-    <div class="card">
-        <ul>
-            <li><b>STS-87 (1997):</b> First mission in space</li>
-            <li>Studied solar physics and microgravity effects</li>
-            <li><b>STS-107 (2003):</b> Final mission (16-day scientific research)</li>
-            <li>Conducted 80+ experiments in space science</li>
-            <li>Studied materials science, Earth observation, and biology</li>
-            <li>Helped improve understanding of life in microgravity conditions</li>
-        </ul>
+<!-- ============ LEGACY ============ -->
+<section class="section section--legacy" id="legacy">
+  <div class="section__inner">
+    <div class="section__head">
+      <span class="eyebrow">Legacy</span>
+      <h2>What She Left Behind</h2>
     </div>
-</section>
-
-<section>
-    <h2>Achievements</h2>
-
-    <div class="grid">
-
-        <div class="mini-card">🚀 First Indian-born woman in space</div>
-        <div class="mini-card">🛰️ 2 NASA space missions</div>
-        <div class="mini-card">🔬 80+ space experiments</div>
-        <div class="mini-card">🌍 Global inspiration</div>
-
+    <div class="legacy__grid">
+      <div class="legacy-card">
+        <div class="element-tile"><span class="num">84</span><span class="sym">Po</span></div>
+        <h3>Polonium</h3>
+        <p>Named after her native Poland, then still partitioned among three empires with no state of its own.</p>
+      </div>
+      <div class="legacy-card">
+        <div class="element-tile"><span class="num">88</span><span class="sym">Ra</span></div>
+        <h3>Radium</h3>
+        <p>Its faint glow in the dark drawer of her desk hinted at a danger no one yet understood.</p>
+      </div>
+      <div class="legacy-card">
+        <span class="eyebrow">Unit</span>
+        <h3>The curie (Ci)</h3>
+        <p>A unit of radioactivity named for Marie and Pierre, still used in nuclear medicine today.</p>
+      </div>
+      <div class="legacy-card">
+        <span class="eyebrow">1995</span>
+        <h3>Reinterred at the Panthéon</h3>
+        <p>Became the first woman honored at the Paris Panthéon on her own scientific merit, sealed in lead for safety.</p>
+      </div>
+      <div class="legacy-card">
+        <div class="element-tile"><span class="num">96</span><span class="sym">Cm</span></div>
+        <h3>Curium</h3>
+        <p>A synthetic element discovered in 1944 was named curium in honor of both Marie and Pierre Curie.</p>
+      </div>
+      <div class="legacy-card">
+        <span class="eyebrow">Family</span>
+        <h3>A dynasty of laureates</h3>
+        <p>Daughter Irène Joliot-Curie won the 1935 Chemistry Nobel with her husband Frédéric — five Nobel Prizes across one family.</p>
+      </div>
+      <div class="legacy-card">
+        <span class="eyebrow">Worldwide</span>
+        <h3>Honored on every continent</h3>
+        <p>Curie has appeared on more than 600 postage stamps, several banknotes, a 2024 French euro coin, and a 2011 Google Doodle.</p>
+      </div>
+      <div class="legacy-card">
+        <span class="eyebrow">EU programme</span>
+        <h3>Marie Skłodowska-Curie Actions</h3>
+        <p>The European Union's fellowship for early-career researchers abroad carries her name, funding scientists who follow her path today.</p>
+      </div>
     </div>
-</section>
-
-<section class="quote">
-    <h2>Quote</h2>
-    <blockquote>
-        “The path from dreams to success does exist.”
-    </blockquote>
+  </div>
 </section>
 
 <footer>
-    Made with ❤️ as Tribute to Kalpana Chawla
+  <strong>Marie Skłodowska Curie</strong>
+  Warsaw, 7 November 1867 — Passy, 4 July 1934<br>
+  A tribute page · facts drawn from Wikipedia &amp; the Nobel Prize archive · portrait via Wikimedia Commons (public domain)
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Workspace Organizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Workspace Studio</h1>
+        <div class="stats-container">
+            <div class="stat-box">
+                <span id="progressPercent">0%</span>
+                <label>Completed</label>
+            </div>
+        </div>
+    </header>
+
+    <!-- Input Form Area -->
+    <div class="input-card">
+        <div class="input-group">
+            <input type="text" id="taskInput" placeholder="Capture a new objective..." autocomplete="off">
+            <select id="prioritySelect" class="priority-dropdown">
+                <option value="Low">Low Priority</option>
+                <option value="Medium" selected>Medium Priority</option>
+                <option value="High">High Priority</option>
+            </select>
+        </div>
+        <button class="btn-primary" id="addTaskBtn">Deploy Task</button>
+    </div>
+
+    <!-- Active Tasks Matrix -->
+    <div class="section-wrapper">
+        <div class="section-header">
+            <div class="title-group">
+                <span class="status-indicator pending-dot"></span>
+                <span class="section-title">Pending Runway</span>
+            </div>
+            <span class="counter-badge" id="pendingCounter">0 Active</span>
+        </div>
+        <ul id="pendingList"></ul>
+    </div>
+
+    <!-- Closed Tasks Archives -->
+    <div class="section-wrapper">
+        <div class="section-header">
+            <div class="title-group">
+                <span class="status-indicator complete-dot"></span>
+                <span class="section-title">Completed Archives</span>
+            </div>
+            <div class="header-utilities">
+                <span class="counter-badge success-badge" id="completedCounter">0 Done</span>
+                <button id="clearAllBtn" class="btn-text-action">Clear Archive</button>
+            </div>
+        </div>
+        <ul id="completedList"></ul>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

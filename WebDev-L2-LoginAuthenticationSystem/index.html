@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Access Portal</title>
+    <style>
+        :root {
+            --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+            --panel-bg: rgba(30, 41, 59, 0.7);
+            --accent: #6366f1;
+            --accent-hover: #4f46e5;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --error: #f43f5e;
+            --success: #10b981;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', system-ui, sans-serif; }
+
+        body {
+            background: var(--bg-gradient);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1.5rem;
+        }
+
+        .auth-container {
+            background: var(--panel-bg);
+            backdrop-filter: blur(16px);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 3rem 2.5rem;
+            width: 100%;
+            max-width: 440px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .hidden { display: none !important; opacity: 0; transform: scale(0.95); }
+
+        h2 { font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; background: linear-gradient(to right, #fff, var(--text-muted)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .subtitle { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 2rem; }
+
+        .form-group { margin-bottom: 1.5rem; position: relative; }
+        label { display: block; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; color: var(--text-muted); }
+        
+        input {
+            width: 100%;
+            padding: 0.85rem 1rem;
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            color: var(--text-main);
+            font-size: 1rem;
+            transition: all 0.2s ease;
+        }
+        input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2); }
+
+        button {
+            width: 100%;
+            padding: 1rem;
+            background: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin-top: 0.5rem;
+        }
+        button:hover { background: var(--accent-hover); transform: translateY(-1px); }
+        button:active { transform: translateY(1px); }
+
+        .msg {
+            margin-top: 1.25rem;
+            padding: 1rem;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            line-height: 1.4;
+            display: flex;
+            align-items: center;
+            animation: fadeIn 0.3s ease;
+        }
+        .msg.error { background: rgba(244, 63, 94, 0.15); border: 1px solid rgba(244, 63, 94, 0.3); color: #fecdd3; }
+        .msg.success { background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.3); color: #d1fae5; }
+
+        .switch-text { margin-top: 1.5rem; text-align: center; font-size: 0.9rem; color: var(--text-muted); }
+        .switch-text a { color: var(--accent); text-decoration: none; font-weight: 600; cursor: pointer; transition: color 0.2s; }
+        .switch-text a:hover { color: #818cf8; text-decoration: underline; }
+
+        /* Dashboard Specifics */
+        .dashboard-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 2rem; }
+        .avatar { width: 48px; height: 48px; background: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; }
+        .badge { display: inline-block; padding: 0.25rem 0.75rem; background: rgba(99, 102, 241, 0.15); color: #a5b4fc; border-radius: 20px; font-size: 0.8rem; font-weight: 600; margin-bottom: 1.5rem; }
+
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body>
+
+    <div id="register-view" class="auth-container">
+        <h2>Create Account</h2>
+        <p class="subtitle">Join our secure platform today.</p>
+        <form id="register-form" novalidate>
+            <div class="form-group">
+                <label for="reg-username">Username or Email</label>
+                <input type="text" id="reg-username" required autocomplete="username" placeholder="Enter your username">
+            </div>
+            <div class="form-group">
+                <label for="reg-password">Password</label>
+                <input type="password" id="reg-password" required autocomplete="new-password" placeholder="password">
+            </div>
+            <button type="submit">Get Started</button>
+        </form>
+        <div id="reg-msg" class="msg hidden"></div>
+        <p class="switch-text">Already configured? <a onclick="showView('login')">Sign in</a></p>
+    </div>
+
+    <div id="login-view" class="auth-container hidden">
+        <h2>Welcome Back</h2>
+        <p class="subtitle">Please sign in to verify identity.</p>
+        <form id="login-form" novalidate>
+            <div class="form-group">
+                <label for="login-username">Username or Email</label>
+                <input type="text" id="login-username" required autocomplete="username" placeholder="Username or email">
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" required autocomplete="current-password" placeholder="password">
+            </div>
+            <button type="submit">Verify & Login</button>
+        </form>
+        <div id="login-msg" class="msg hidden"></div>
+        <p class="switch-text">New to the platform? <a onclick="showView('register')">Create account</a></p>
+    </div>
+
+    <div id="dashboard-view" class="auth-container hidden">
+        <div class="dashboard-header">
+            <div>
+                <h2>Workspace</h2>
+                <p class="subtitle" style="margin-bottom: 0;">Access granted.</p>
+            </div>
+            <div id="user-avatar" class="avatar">U</div>
+        </div>
+        <span class="badge">Protected Environment Session active</span>
+        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 2rem;">
+            This panel is guarded via programmatic local validation. Clearing application memory or requesting an explicit exit breaks runtime validation.
+        </p>
+        <button id="logout-btn" style="background: rgba(255,255,255,0.08); border: 1px solid var(--border); color: var(--text-main);">Terminate Session</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
